@@ -1,0 +1,162 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    cursor: url(Cursor/puntero-removebg-preview.png), auto;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    padding: 20px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li a{
+    margin-right: 20px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: url(Cursor/mano-removebg-preview.png), auto;
+  }
+  nav ul li a:hover{
+    background-color: white;
+    border: 4px solid rgb(14, 13, 13);
+    border-bottom: #000;
+    border-radius: 6px;
+    color: rgb(0, 0, 0); 
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h2 {
+    font-size: 3em;
+  }
+  
+  .noleta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .noleta:hover {
+    background-color: #ff7f2a;
+  }
+  
+  .naleta {
+    padding: 100px 0;
+  }
+  
+  .naleta {
+    margin-bottom: 40px;
+  }
+  
+  .nosotros {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .footer {
+    background-color: #222;
+    padding: 50px 0;
+    color: #ccc;
+  }
+  
+  .creditos {
+    text-align: center;
+  }
+  
+  #hero{
+    min-height: 100vh;
+    position: relative;
+  }
+
+  video {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .capa {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+
+  }
+  h1, a {
+    position: relative; /* Por defecto es static, pero puedes ajustarlo según tus necesidades */
+    z-index: 1; /* Valor positivo para que estén por encima del video */
+  }
+
+
+.neon-text{
+    text-transform: uppercase;
+    font-size: 5rem;
+    cursor: pointer;
+    transition: .3s linear;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    background-image: linear-gradient(to left, rgba(255, 251, 0, 0.5), rgb(226, 33, 33), rgb(97, 91, 91), rgb(35, 31, 31));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: move 3s linear infinite;
+}
+
+@keyframes move{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.neon-text:hover{
+    color: red;
+    text-shadow: 0 0 10px rgba(255, 0, 0, .5),
+                 0 0 20px rgba(255, 0, 0, .5),
+                 0 0 40px rgba(255, 0, 0, .5),
+                 0 0 80px rgba(255, 0, 0, .5),
+                 0 0 160px rgba(255, 0, 0, .5),
+                 0 0 320px rgba(255, 0, 0, .5);
+}
+
+nav{
+    background-color: #000;
+    margin-top: -20px;
+    ul{
+        padding-top: 10px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+}
